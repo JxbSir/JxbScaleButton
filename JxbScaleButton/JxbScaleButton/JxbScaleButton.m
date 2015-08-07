@@ -29,7 +29,7 @@
     {
         self.backgroundColor = setting.colorDisable ? setting.colorDisable : [UIColor lightGrayColor];
         [self setEnabled:NO];
-        NSString* title = [NSString stringWithFormat:@"   %@%ld%@   ",(setting.strPrefix ? setting.strPrefix : @""),setting.indexStart,(setting.strSuffix ? setting.strSuffix : @"")];
+        NSString* title = [NSString stringWithFormat:@"   %@%d%@   ",(setting.strPrefix ? setting.strPrefix : @""),setting.indexStart,(setting.strSuffix ? setting.strSuffix : @"")];
         NSLog(@"%@",title);
         [self setTitle:title forState:UIControlStateNormal];
         [self setTitle:title forState:UIControlStateDisabled];
